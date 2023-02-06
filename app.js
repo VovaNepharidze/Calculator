@@ -34,25 +34,14 @@ buttonEqual.addEventListener('click',function(){
     let num2 = Number(input.value)
     let result;
 
-    switch(operator){
-        case "+" :
-        result = num1 + num2
-            break;
-            case "-" :
-        result = num1 - num2
-            break;
-            case "/" :
-        result = num1 / num2
-            break;
-            case "*" :
-         result = num1 * num2
-            break;
-            case "%" :
-        result = num1 % num2
-            break;
-
-    }
+    operator == "+" ? result = num1 + num2 :
+    operator == "-" ? result = num1 - num2 :
+    operator == "/" ? result = num1 / num2 :
+    operator == "*" ? result = num1 * num2 :
+    operator == "%" ? result = num1 % num2 : console.log("empty operator");
+    
     input.value = result
+
 })
 
 
